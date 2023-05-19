@@ -1,18 +1,20 @@
 #include <unistd.h>
 
 /**
- * main - output using putchar
+ * main - using putchar
  *
  * Return: Always 1 (Error)
  */
 int main(void)
 {
 	char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	int i = 0;
 
-	for (int i=0; message[i] != '\0'; i++)
+	while (message[i] != '\0')
 	{
 		putchar(message[i]);
+		i++;
 	}
 
-    return (1);
+	return (1);
 }
