@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * _islower - Checks for a character
+ * _isalpha - Checks for a character
  *
  * @c: The character to check
  *
