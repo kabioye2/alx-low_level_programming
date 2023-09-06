@@ -19,7 +19,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (; i < n; i++)
 	{
-		dest[i] = dest[i - n];
+		dest[i] = '\0';  // Corrected padding with null characters
 	}
 
 	return (dest);
