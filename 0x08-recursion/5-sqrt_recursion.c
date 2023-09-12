@@ -8,9 +8,8 @@
 
 int _sqrt_recursion(int n)
 {
-	int approx;
-	int next_approx;
-
+	double approx;
+	double next_approx;
 
 	if (n < 0)
 	{
@@ -21,13 +20,13 @@ int _sqrt_recursion(int n)
 		return (n);
 	}
 
-	approx = n / 2;
-	next_approx = (approx + n / approx) / 2;
+	approx = n / 2.0;
+	next_approx = (approx + n / approx) / 2.0;
 
-	if (next_approx == approx) 
+	if (next_approx >= approx)
 	{
-		return approx;
+		return ((int)approx);
 	}
 
-	return _sqrt_recursion(next_approx); 
+	return (_sqrt_recursion((int)next_approx));
 }
