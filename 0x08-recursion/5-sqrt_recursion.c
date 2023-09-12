@@ -2,12 +2,6 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - calculates natural square root of a number
- * @n: number to be squared
- * Return: natural square root of @n, otherwise -1
- */
-
-/**
  * _sqrt_recursion_srch - helper function to sqrt function
  * @n: number to be squared
  * @r: guess root for number
@@ -29,6 +23,12 @@ int _sqrt_recursion_srch(int n, int r)
 		return (_sqrt_recursion_srch(n, r + 1));
 	}
 }
+
+/**
+ * _sqrt_recursion - calculates natural square root of a number
+ * @n: number to be squared
+ * Return: natural square root of @n, otherwise -1
+ */
 
 int _sqrt_recursion(int n)
 {
