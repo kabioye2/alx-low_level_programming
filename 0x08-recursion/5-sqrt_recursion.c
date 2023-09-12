@@ -7,30 +7,26 @@
  * Return: natural square root of @n, otherwise -1
  */
 
-double _sqrt_recursion_srch(double n, double low, double high)
-{
-	int mid;
-	int square;
+/**
+ * _sqrt_recursion_srch - helper function to sqrt function
+ * @n: number to be squared
+ * @r: guess root for number
+ * Return: natural square root of @n, otherwise -1
+ */
 
-	if (low > high)
+int _sqrt_recursion_srch(int n, int r)
+{
+	if ((r * r) > n)
 	{
 		return (-1);
 	}
-
-	mid = low + (high - low) / 2;
-	square = mid * mid;
-
-	if (square == n)
+	else if ((r * r) == n)
 	{
-		return (mid);
-	}
-	else if (square < n)
-	{
-		return (_sqrt_recursion_srch(n, mid + 1, high));
+		return (r);
 	}
 	else
 	{
-		return (_sqrt_recursion_srch(n, low, mid - 1));
+		return (_sqrt_recursion_srch(n, r + 1);
 	}
 }
 
@@ -45,5 +41,5 @@ int _sqrt_recursion(int n)
 		return (n);
 	}
 
-	return ((int)_sqrt_recursion_srch((double)n, 0, n));
+	return (_sqrt_recursion_srch(n, 0));
 }
