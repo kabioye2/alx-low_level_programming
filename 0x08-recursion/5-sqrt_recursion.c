@@ -26,7 +26,7 @@ int _sqrt_recursion_srch(int n, int r)
 	}
 	else
 	{
-		return (_sqrt_recursion_srch(n, r + 1);
+		return (_sqrt_recursion_srch(n, r + 1));
 	}
 }
 
