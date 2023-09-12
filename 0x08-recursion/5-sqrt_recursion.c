@@ -7,7 +7,7 @@
  * Return: natural square root of @n, otherwise -1
  */
 
-int _sqrt_recursion_srch(int n, int low, int high)
+double _sqrt_recursion_srch(double n, double low, double high)
 {
 	int mid;
 	int square;
@@ -45,5 +45,5 @@ int _sqrt_recursion(int n)
 		return (n);
 	}
 
-	return (_sqrt_recursion_srch(n, 0, n));
+	return ((int)_sqrt_recursion_srch((double)n, 0, n));
 }
