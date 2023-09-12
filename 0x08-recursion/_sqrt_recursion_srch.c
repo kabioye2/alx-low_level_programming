@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "main.h"
 
-int _sqrt_recursion(int n, int low, int high)
+int _sqrt_recursion_srch(int n, int low, int high)
 {
 	int mid;
 	int square;
@@ -19,10 +20,10 @@ int _sqrt_recursion(int n, int low, int high)
 	}
 	else if (square < n)
 	{
-		return (_sqrt_recursion(n, mid + 1, high));
+		return (_sqrt_recursion_srch(n, mid + 1, high));
 	}
 	else
 	{
-		return (_sqrt_recursion(n, low, mid - 1));
+		return (_sqrt_recursion_srch(n, low, mid - 1));
 	}
 }
