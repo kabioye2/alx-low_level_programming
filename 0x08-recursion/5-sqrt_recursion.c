@@ -29,5 +29,5 @@ int _sqrt_recursion(int n)
 		return approx;
 	}
 
-	return _sqrt_recursive(next_approx); 
+	return _sqrt_recursion(next_approx); 
 }
