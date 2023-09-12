@@ -12,7 +12,7 @@
 
 int palindrome_helper(char *s, int first, int last)
 {
-	if (start >= end)
+	if (first >= last)
 	{
 		return (1);
 	}
