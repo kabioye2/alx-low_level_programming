@@ -19,4 +19,6 @@ int _sqrt_recursion_srch(int n, int r);
 
 int is_prime_number(int n);
 
+int divisor(int n, int d);
+
 #endif /* MAIN_H */

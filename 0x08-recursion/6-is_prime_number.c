@@ -14,7 +14,7 @@ int divisor(int n, int d)
 		return (0);
 	}
 
-	if (n % divisor == 0)
+	if (n % d == 0)
 	{
 		return (1);
 	}
