@@ -21,4 +21,8 @@ int is_prime_number(int n);
 
 int divisor(int n, int d);
 
+int palindrome_helper(char *s, int first, int last);
+
+int is_palindrome(char *s);
+
 #endif /* MAIN_H */
