@@ -19,7 +19,7 @@ int divisor(int n, int d)
 		return (0);
 	}
 
-	return divisor(n, d - 1);
+	return (divisor(n, d - 1));
 }
 
 /**
