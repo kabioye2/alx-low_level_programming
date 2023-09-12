@@ -25,4 +25,6 @@ int palindrome_helper(char *s, int first, int last);
 
 int is_palindrome(char *s);
 
+int wildcmp(char *s1, char *s2);
+
 #endif /* MAIN_H */
