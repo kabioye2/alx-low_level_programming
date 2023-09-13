@@ -1,9 +1,6 @@
-#include <stdio.h>
-
-/**
- * ABS - Computes the absolute value of a number x.
- * @x: The number for which to compute the absolute value.
- * Return: The absolute value of x.
- */
+#ifndef _3_FUNCTION_LIKE_MACRO_H
+#define _3_FUNCTION_LIKE_MACRO_H
 
 #define ABS(x) ((x) < 0 ? -(x) : (x))
+
+#endif /* _3_FUNCTION_LIKE_MACRO_H */
