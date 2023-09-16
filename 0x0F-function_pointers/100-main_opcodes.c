@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < bytes; i++)
 	{
-		printf("%02x ", main_ptr[i] & 0xFF);
+		printf("%02hhx ", main_ptr[i]);
 	}
 	printf("\n");
 
