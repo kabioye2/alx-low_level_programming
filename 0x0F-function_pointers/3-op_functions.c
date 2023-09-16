@@ -1,14 +1,10 @@
 #include "3-calc.h"
 
 /**
- * This file contains the implementation of the operator functions:
- *
- * op_add - sum
- * op_sub
- * op_mul
- * op_div
- * op_mod
- *
+ * kdkmfjkjkngjkdgkjd
+ */
+
+/**
  * op_add - calculates sum of 2 integers
  * @a: first integer
  * @b: second integer
