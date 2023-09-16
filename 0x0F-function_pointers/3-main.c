@@ -14,7 +14,8 @@ int main(int argc, char *argv[])
 {
 	int num1;
 	int num2;
-	int result;
+	int calc;
+	char *operator;
 	int (*func_ptr)(int, int);
 
 	if (argc != 4)
@@ -28,9 +29,6 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
-	func_ptr = get_op_func(argv[2]);
 	if (argc != 4)
 	{
 		_putchar('E');
@@ -42,7 +40,12 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((*argv[2] == '/' || *argv[2] == '%') && num2 == 0)
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	operator = argv[2];
+	func_ptr = get_op_func(operator);
+
+	if ((*operator == '/' || *operator == '%') && num2 == 0)
 	{
 		_putchar('E');
 		_putchar('r');
@@ -53,9 +56,8 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	result = func_ptr(num1, num2);
-	_putchar(result + '0');
-	_putchar('\n');
+	calc = func_ptr(num1, num2);
+	printf("%d\n", calc);
 
 	return (0);
 }
