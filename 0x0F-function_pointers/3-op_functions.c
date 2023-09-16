@@ -1,12 +1,12 @@
 #include "3-calc.h"
 
 /**
+ * Description: operator functions for function pointer
+ *
  * op_add - calculates sum
  * @a: first integer
  * @b: second integer
  * Return: the sum of @a and @b
- *
- * Description: operator functions
  */
 
 int op_add(int a, int b)
