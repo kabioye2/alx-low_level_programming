@@ -35,7 +35,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div: calculates result of dividion
+ * op_div - calculates result of dividion
  * @a: first integer
  * @b: second integer
  * Return: the result of the division of @a by @b
