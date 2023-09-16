@@ -3,7 +3,7 @@
 /**
  * This file contains the implementation of the operator functions:
  *
- * op_add
+ * op_add - sum
  * op_sub
  * op_mul
  * op_div
