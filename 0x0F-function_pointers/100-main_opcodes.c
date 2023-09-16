@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		exit (1);
+		exit(1);
 	}
 
 	bytes = atoi(argv[1]);
@@ -27,14 +27,18 @@ int main(int argc, char *argv[])
 	if (bytes < 0)
 	{
 		printf("Error\n");
-		exit (2);
+		exit(2);
 	}
 
 	main_ptr = (unsigned char *)&main;
 
 	for (i = 0; i < bytes; i++)
 	{
-		printf("%02hhx ", main_ptr[i]);
+		printf("%02x ", main_ptr[i]);
+		if (i < bytes - 1)
+		{
+			putchar(' ');
+		}
 	}
 	printf("\n");
 
