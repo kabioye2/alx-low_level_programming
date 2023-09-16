@@ -21,12 +21,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		_putchar('E');
-		_putchar('r');
-		_putchar('r');
-		_putchar('o');
-		_putchar('r');
-		_putchar('\n');
+		printf("Error\n");
 		exit(98);
 	}
 
@@ -37,23 +32,13 @@ int main(int argc, char *argv[])
 
 	if (strlen(operator) != 1 || func_ptr == NULL)
 	{
-		_putchar('E');
-		_putchar('r');
-		_putchar('r');
-		_putchar('o');
-		_putchar('r');
-		_putchar('\n');
+		printf("Error\n");
 		exit(99);
 	}
 
 	if ((*operator == '/' || *operator == '%') && num2 == 0)
 	{
-		_putchar('E');
-		_putchar('r');
-		_putchar('r');
-		_putchar('o');
-		_putchar('r');
-		_putchar('\n');
+		printf("Error\n");
 		exit(100);
 	}
 

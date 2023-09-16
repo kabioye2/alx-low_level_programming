@@ -1,6 +1,10 @@
 #include "3-calc.h"
 
 /**
+ * Description: functions based on operator
+ */
+
+/**
  * op_add - calculates sum
  * @a: first integer
  * @b: second integer
@@ -11,7 +15,6 @@ int op_add(int a, int b)
 {
 	return (a + b);
 }
- 
 
 /**
  * op_sub - calculates difference
@@ -43,7 +46,7 @@ int op_mul(int a, int b)
  * @b: second integer
  * Return: the result of the division of @a by @b
  */
-       
+
 int op_div(int a, int b)
 {
 	return (a / b);
