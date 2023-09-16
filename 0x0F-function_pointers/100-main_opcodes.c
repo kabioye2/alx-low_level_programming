@@ -30,15 +30,11 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	main_ptr = (unsigned char *)&main;
+	main_ptr = (unsigned char *)main;
 
 	for (i = 0; i < bytes; i++)
 	{
 		printf("%02x ", main_ptr[i]);
-		if (i < bytes - 1)
-		{
-			putchar(' ');
-		}
 	}
 	printf("\n");
 
