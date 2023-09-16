@@ -30,9 +30,12 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
+	num1 = atoi(argv[1]);
+        num2 = atoi(argv[3]);
 	operator = argv[2];
+	func_ptr = get_op_func(operator);
 
-	if (strlen(operator) != 1)
+	if (strlen(operator) != 1 || func_ptr == NULL)
 	{
 		_putchar('E');
 		_putchar('r');
@@ -42,11 +45,6 @@ int main(int argc, char *argv[])
 		_putchar('\n');
 		exit(99);
 	}
-
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
-
-	func_ptr = get_op_func(operator);
 
 	if ((*operator == '/' || *operator == '%') && num2 == 0)
 	{
