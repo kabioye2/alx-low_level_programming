@@ -1,10 +1,6 @@
 #include "3-calc.h"
 
 /**
- * Description: functions based on operator
- */
-
-/**
  * op_add - calculates sum
  * @a: first integer
  * @b: second integer
