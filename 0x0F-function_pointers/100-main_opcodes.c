@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int bytes;
 	int i;
-	int (*main_ptr)();
+	unsigned char *main_ptr;
 	char opcode;
 
 	if (argc != 2)
@@ -30,12 +30,11 @@ int main(int argc, char *argv[])
 		exit (2);
 	}
 
-	main_ptr = &main;
+	main_ptr = (unsigned char *)&main;
 
 	for (i = 0; i < bytes; i++)
 	{
-		opcode = ((char *)main_ptr)[i];
-		printf("%02hhx ", opcode);
+		printf("%02x ", main_ptr[i] & 0xFF);
 	}
 	printf("\n");
 
