@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "3-calc.h"
 
 /**
@@ -29,7 +30,9 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if (argc != 4)
+	operator = argv[2];
+
+	if (strlen(operator) != 1)
 	{
 		_putchar('E');
 		_putchar('r');
@@ -42,7 +45,7 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	operator = argv[2];
+
 	func_ptr = get_op_func(operator);
 
 	if ((*operator == '/' || *operator == '%') && num2 == 0)
