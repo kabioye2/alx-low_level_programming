@@ -1,6 +1,8 @@
 #include "3-calc.h"
 
 /**
+ * kjjhnkjhnkjhnkjhnjkhkjkj
+ *
  * Description: operator functions for function pointer
  *
  * op_add - calculates sum
