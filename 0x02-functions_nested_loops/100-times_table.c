@@ -15,21 +15,37 @@ void print_times_table(int n)
 	i = 0;
 	j = 0;
 
+	if (n > 15 || n < 0)
+	{
+		return;
+	}
+
 	for (i = 0; i <= n; i++)
 	{
 		for (j = 0; j <= n; j++)
 		{
 			product = i * j;
 
-			if (j > 0 && product < 10)
+			if (j > 0)
 			{
-				printf(" ");
+				if (product < 10)
+				{
+					printf("   ");
+				}
+				else if (product < 100)
+				{
+					printf("  ");
+				}
+				else if (product < 1000)
+				{
+					printf(" ");
+				}
 			}
 			printf("%d", product);
 
 			if (j < n)
 			{
-				printf(",  ");
+				printf(",");
 			}
 		}
 		printf("\n");
