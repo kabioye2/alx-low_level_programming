@@ -11,7 +11,7 @@ void print_times_table(int n)
 	int j;
 	int product;
 	int spaces;
-	int temp;
+
 	i = 0;
 	j = 0;
 	if (n > 15 || n < 0)
@@ -23,13 +23,10 @@ void print_times_table(int n)
 		for (j = 0; j <= n; j++)
 		{
 			product = i * j;
-			temp = product;
-			while (temp >= 10)
+			if (j > 0)
 			{
-				temp /= 10;
-				spaces++;
+				printf("%3d", product);
 			}
-			printf("%*d", spaces, product);
 			if (j < n)
 			{
 				printf(",");
