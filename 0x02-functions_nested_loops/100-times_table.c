@@ -10,7 +10,6 @@ void print_times_table(int n)
 	int i;
 	int j;
 	int product;
-	int spaces;
 
 	i = 0;
 	j = 0;
