@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print times_table -  prints n times table, starting with 0
+ * print_times_table -  prints n times table, starting with 0
  * @n: the integer
  */
 
@@ -29,7 +29,7 @@ void print_times_table(int n)
 
 			if (j < n)
 			{
-				printf(", ");;
+				printf(",  ");
 			}
 		}
 		printf("\n");
