@@ -26,7 +26,10 @@ void print_times_table(int n)
 			{
 				printf("%3d", product);
 			}
-			printf("%d", product);
+			else
+			{
+				printf("%d", product);
+			}
 			if (j < n)
 			{
 				printf(",");
