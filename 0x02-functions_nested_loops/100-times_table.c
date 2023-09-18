@@ -27,7 +27,7 @@ void print_times_table(int n)
 			while (temp >= 10)
 			{
 				temp /= 10;
-				spaces++
+				spaces++;
 			}
 			printf("%*d", spaces, product);
 			if (j < n)
