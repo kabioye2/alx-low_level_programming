@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- main - find sum for multiples below 1024
+ * main - Entry point
+ * Return: 0
  */
 
 int main(void)
@@ -10,7 +11,7 @@ int main(void)
 	int i;
 	int sum;
 
-	sum = 2;
+	sum = 8;
 	for (i = 6; i < 1024; i++)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
