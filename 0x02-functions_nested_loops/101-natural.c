@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * multiples - find sum for multiples below 1024
+ main - find sum for multiples below 1024
  */
 
-void multiples(void)
+int main(void)
 {
 	int i;
 	int sum;
@@ -19,4 +19,5 @@ void multiples(void)
 		}
 	}
 	printf("%d\n", sum);
+	return (0);
 }
