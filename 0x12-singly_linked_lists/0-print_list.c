@@ -17,7 +17,6 @@ void print_null(void)
 	_putchar('i');
 	_putchar('l');
 	_putchar(')');
-	_putchar('\n');
 }
 
 /**
