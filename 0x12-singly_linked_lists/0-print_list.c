@@ -54,19 +54,5 @@ size_t print_list(const list_t *h)
 		count++;
 		h = h->next;
 	}
-	_putchar('-');
-	_putchar('>');
-	_putchar(' ');
-	_putchar(count + '0');
-	_putchar(' ');
-	_putchar('e');
-	_putchar('l');
-	_putchar('e');
-	_putchar('m');
-	_putchar('e');
-	_putchar('n');
-	_putchar('t');
-	_putchar('s');
-	_putchar('\n');
 	return (count);
 }
