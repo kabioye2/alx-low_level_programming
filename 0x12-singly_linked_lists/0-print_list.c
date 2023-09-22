@@ -16,7 +16,6 @@ void print_null(void)
 	_putchar('n');
 	_putchar('i');
 	_putchar('l');
-	_putchar('l');
 	_putchar(')');
 	_putchar('\n');
 }
