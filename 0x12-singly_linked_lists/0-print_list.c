@@ -2,22 +2,6 @@
 #include <stdio.h>
 #include "lists.h"
 
-/**
- * print_null - print nill for null string
- */
-
-void print_null(void)
-{
-	_putchar('[');
-	_putchar('0');
-	_putchar(']');
-	_putchar(' ');
-	_putchar('(');
-	_putchar('n');
-	_putchar('i');
-	_putchar('l');
-	_putchar(')');
-}
 
 /**
  * print_list - prints all the elements of a list_t list
@@ -27,30 +11,22 @@ void print_null(void)
 
 size_t print_list(const list_t *h)
 {
-	unsigned int i;
-	int count;
+	size_t count;
 
 	count = 0;
 	while (h != NULL)
 	{
 		if (h->str == NULL)
 		{
-			print_null();
+			printf("[0] (nil)\n");
 		}
 		else
 		{
-			_putchar('[');
-			_putchar(h->len + '0');
-			_putchar(']');
-			_putchar(' ');
-			for (i = 0; h->str[i] != '\0'; i++)
-			{
-				_putchar(h->str[i]);
-			}
+			printf("[%u] %s\n", h->len, h->str);
 		}
-		_putchar('\n');
 		count++;
 		h = h->next;
 	}
+
 	return (count);
 }
