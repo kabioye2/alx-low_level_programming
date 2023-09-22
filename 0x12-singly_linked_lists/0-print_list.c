@@ -29,11 +29,15 @@ void print_null(void)
 
 size_t print_list(const list_t *h)
 {
+	unsigned int i;
+	int count;
+
+	count = 0;
 	while (h != NULL)
 	{
 		if (h->str == NULL)
 		{
-			void print_null(void);
+			print_null();
 		}
 		else
 		{
@@ -41,7 +45,7 @@ size_t print_list(const list_t *h)
 			_putchar(h->len + '0');
 			_putchar(']');
 			_putchar(' ');
-			for (unsigned int i = 0; h->str[i] != '\0'; i++)
+			for (i = 0; h->str[i] != '\0'; i++)
 			{
 				_putchar(h->str[i]);
 			}
@@ -53,7 +57,7 @@ size_t print_list(const list_t *h)
 	_putchar('-');
 	_putchar('>');
 	_putchar(' ');
-	_putchar(node_count + '0');
+	_putchar(count + '0');
 	_putchar(' ');
 	_putchar('e');
 	_putchar('l');
@@ -64,5 +68,5 @@ size_t print_list(const list_t *h)
 	_putchar('t');
 	_putchar('s');
 	_putchar('\n');
-	return (node_count);
+	return (count);
 }
