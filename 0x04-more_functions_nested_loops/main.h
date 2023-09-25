@@ -28,4 +28,6 @@ void print_triangle(int size);
 
 void print_number(int n);
 
+void fizz_buzz(void);
+
 #endif /* MAIN_H */
