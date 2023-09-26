@@ -11,4 +11,5 @@ main:
         lea rdi, [format]
         call printf
 	add rsp, 8
+	xor rdi, rdi
 	ret
