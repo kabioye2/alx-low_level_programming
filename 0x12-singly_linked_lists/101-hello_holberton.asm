@@ -7,9 +7,10 @@ section .text
 	extern printf
 
 main:
-	sub rsp, 8
+	push rbp
+	mov rbp, rsp
         lea rdi, [format]
         call printf
-	add rsp, 8
-	xor rdi, rdi
+	mov eax, 0
+	pop rbp
 	ret
