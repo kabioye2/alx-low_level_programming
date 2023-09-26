@@ -6,5 +6,5 @@
 
 void __attribute__((constructor)) init(void)
 {
-	printf("A tortoise, having pretty good sense of a hare's nature, challenges one to a race.\n");
+	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
 }
