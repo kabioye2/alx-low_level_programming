@@ -6,16 +6,6 @@
 
 int main(void)
 {
-	char* filename;
-	int i;
-	
-	filename = __FILE__;
-	i = 0;
-	while (fileName[i] != '\0')
-	{
-		_putchar(fileName[i]);
-		i++;
-	}
-	_putchar('\n');
+	printf("%s\n", __FILE__);
 	return (0);
 }
